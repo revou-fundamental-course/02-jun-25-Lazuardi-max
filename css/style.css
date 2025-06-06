@@ -79,6 +79,19 @@ section {
     max-width: 1000px;
 }
 
+#message-us {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#contact-form, #form-result {
+    flex: 1;
+    min-width: 300px;
+}
+
 /* Baner Image */
 .banner-img {
     height: 350px;
@@ -177,6 +190,14 @@ footer {
     }
 
     form {
+        width: 100%;
+    }
+
+    #message-us {
+        flex-direction: column;
+    }
+
+    #contact-form, #form-result {
         width: 100%;
     }
 }
