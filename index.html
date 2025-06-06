@@ -37,7 +37,7 @@
         <!-- Home Section -->
         <section id="home">
         <h1 id="welcome">Hi, <span id="student-name">...</span></h1>
-        <p>Selamat datang di halaman profil SMK Budi Karya Natar. Di sini kamu bisa melihat informasi dan pencapaian sekolah kami</p>
+        <p>Selamat datang di SMK Budi Karya Natar. SMK Budi Karya merupakan satu-satunya Sekolah Menengah Kejuruan berbasis Revolusi Industri 4.0  di wilayah Natar.</p>
 
             <!-- Banner Section-->
             <div class="banner-img"></div>
@@ -48,7 +48,18 @@
         <!-- Profile Section -->
         <section id="our-profile">
             <h1> Our Profile</h1>
-            <p>We are a team of workhard developers.</p>
+            <p>SMK Budi Karya Natar adalah sekolah kejuruan yang berfokus pada revolusi industri 4.0.</p>
+        
+            <h2> Vision </h2>
+            <p>Menjadi SMK unggulan dalam teknologi dan kewirausahaan berbasis industri digital.</p>
+
+            <h2>Mission</h2>
+            <ul>
+                <li>Meningkatkan kompetensi siswa sesuai kebutuhan dunia kerja</li>
+                <li>Mengembangkan karakter siswa berintegritas dan inofatif</li>
+                <li>Menjalin kerja sama dengan industri dan dunia usaha</li>
+            </ul>
+
         </section>
 
     <hr />
@@ -58,13 +69,18 @@
             <h1>Message Us</h1>
             <p>If you have any questions, feel free to reach out!</p>
             
-            <form>
+            <form id="contact-form">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="phone">Phone Number</label><br>
+                <input type="phone" id="phone" name="phone"><br><br>
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message"></textarea><br><br>
                 <button type="submit">Send</button>
             </form>
+            <div id="form-result"></div>
         </section>
     </main>
 

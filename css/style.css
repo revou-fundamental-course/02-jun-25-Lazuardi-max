@@ -7,7 +7,7 @@
 
 /* Body Component*/
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-color: #f0f8ff;
     color: #333;
@@ -30,10 +30,11 @@ body {
 .main-logo {
     height: 60px;
     width: 60px;
-    background-image: url(url(../logoSMK.jpg));
+    background-image: url(../logoSMK.jpg);
     border-radius: 50%;
     background-size: cover;
     background-position: center;
+    margin-right: 10px;
 }
 
 #menu-toggle {
@@ -56,6 +57,7 @@ nav a {
     border: 1px solid #ccc;
     padding: 8px 16px;
     color: #333;
+    font-weight: bold;
     text-decoration: none;
     border-radius: 4px;
     background-color: #ffffff;
@@ -69,17 +71,18 @@ nav a:hover {
 /* Section Styling */
 section {
     padding: 40px 20px;
-    margin: 20px 0;
+    margin: 20px auto;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    height: 500px;
+    min-height: 500px;
+    max-width: 1000px;
 }
 
 /* Baner Image */
 .banner-img {
     height: 350px;
-    background-image: url(../Cu.png);
+    background-image: url(../logoSMK.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 8px;
@@ -91,7 +94,6 @@ form {
     max-width: 400px;
     margin-top: 20px;
 }
-
 
 form label {
     display: block;
@@ -122,6 +124,13 @@ form button:hover {
     background-color: #004d40;
 }
 
+#form-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
 
 /* Footer Component*/
 footer {
@@ -138,7 +147,7 @@ footer {
 }
 
 /* Responsive */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     #menu-toggle {
         display: block;
     }
@@ -169,5 +178,17 @@ footer {
 
     form {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 10px;
     }
 }
