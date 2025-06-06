@@ -79,19 +79,6 @@ section {
     max-width: 1000px;
 }
 
-#message-us {
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-#contact-form, #form-result {
-    flex: 1;
-    min-width: 300px;
-}
-
 /* Baner Image */
 .banner-img {
     height: 350px;
@@ -135,6 +122,20 @@ form button {
 
 form button:hover {
     background-color: #004d40;
+}
+
+.form-wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#contact-form, #form-result {
+    flex: 1;
+    min-width: 300px;
 }
 
 #form-result {
@@ -193,7 +194,7 @@ footer {
         width: 100%;
     }
 
-    #message-us {
+    .form-wrapper {
         flex-direction: column;
     }
 
