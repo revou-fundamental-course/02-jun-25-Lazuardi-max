@@ -46,6 +46,24 @@ body {
     margin-left: auto;
 }
 
+#our-profile ul {
+    margin-left: 30px;
+}
+
+#our-profile li {
+    margin-bottom: 8px;
+}
+
+#welcome {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#description {
+    font-size: 14px;
+    color: #070707;
+}
 
 /*Navbar Component*/
 nav {
@@ -79,12 +97,14 @@ section {
     max-width: 1000px;
 }
 
-/* Baner Image */
+/* Banner Image */
 .banner-img {
-    height: 350px;
-    background-image: url(../logoSMK.jpg);
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    height: auto; aspect-ratio: 16/9;
+    background-image: url(https://scontent.ftkg1-1.fna.fbcdn.net/v/t39.30808-6/480428527_3953266728328934_3870128661388539688_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=bCJdqIwDutIQ7kNvwHTgb8G&_nc_oc=AdnYZxSvC59djcBefpruLAtAYApsuU4VASFU7hBsv9h9SzGK4RpfvICPfOyDku-tMQ8&_nc_zt=23&_nc_ht=scontent.ftkg1-1.fna&_nc_gid=KA-Q-Jv3g6x9ul1nmaDWhQ&oh=00_AfPTEvKSvNYTALLvROwwuuwO47f4hswnTJyoc0kf_Etk5w&oe=684B3526);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
     border-radius: 8px;
     margin-top: 20px;
 }
@@ -148,16 +168,48 @@ form button:hover {
 
 /* Footer Component*/
 footer {
-    text-align: right;
-    margin-top: 40px;
-    color: #777
+    background-color: #e0e0e2;
+    color: #292828;
+    padding: 30px 20px;
+    font-size: 14px;
 }
 
 #home h1#welcome {
+    background-color: #ebf1f0;
     font-size: 2.2rem;
-    color: #00796b;
+    color: #070707;
+    padding: 30px 20px;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-left h3, .footer-right h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-right {
+    line-height: 1.6;
+    margin: 0;
+    text-align: right;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #252525;
 }
 
 /* Responsive */
@@ -187,7 +239,7 @@ footer {
     }
 
     .banner-img {
-        height: 200px;
+        height: 40vh;
     }
 
     form {
@@ -199,6 +251,15 @@ footer {
     }
 
     #contact-form, #form-result {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+
+    .footer-left, .footer-right {
+        flex: 1;
         width: 100%;
     }
 }

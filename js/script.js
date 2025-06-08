@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const studentName = prompt("Masukkan nama kamu:");
     if (studentName) {
         document.getElementById("student-name").textContent = studentName;
+    } else {
+        document.getElementById("student-name").textContent = "pengunjung";   
     }
 
     //Validasi dan tampilan hasil form
